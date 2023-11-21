@@ -9,7 +9,7 @@ import marshmallow as ma
 from sqlalchemy.ext import serializer
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1111@localhost:5432/python_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://[USERNAME]:[PASSWORD]@localhost:5432/[DATANASE]'
 UPLOAD_FOLDER = 'static/resources'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
